@@ -1,6 +1,6 @@
 # enable logging 
 deflog on
 
-# set the name of the log file
+# set the name of the log file (should change this is to a relative path under home dir)
 logfile /Users/davenoonan/scratch/screen/%Y-%m-%d_%n-screen.log
 
