@@ -1,6 +1,8 @@
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 # Aliases because I'm lazy
-alias ...='cd ../..'
 alias ..='cd ..'
+alias ...='cd ../..'
 alias ll='ls -l'
 alias md='mkdir'
 alias rd='rmdir'
@@ -17,6 +19,7 @@ alias pr='sudo nmap -sn -oG ~/scratch/nmap-pr_`date +%Y-%m-%d_%H%M`.txt -PE'
 alias h='host'
 alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
+alias wifi="networksetup -setairportpower en0"
 
 # Aliases for editing things
 alias ed='sudo open -a TextWrangler.app'
