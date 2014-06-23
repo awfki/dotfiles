@@ -1,4 +1,4 @@
-.files on my work Mac
+.files for Mac
 
 Need a linux version too. 
 
