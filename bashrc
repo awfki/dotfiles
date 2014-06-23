@@ -43,8 +43,9 @@ PS1='\W/ \$ '
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
-bind '"\e[A"':history-search-backward # Use up and down arrow to search
-bind '"\e[B"':history-search-forward  # the history. Invaluable!
+# Use up and down arrow to search command history. Invaluable!
+bind '"\e[A"':history-search-backward 
+bind '"\e[B"':history-search-forward  
 
 alias hi='history'
 
