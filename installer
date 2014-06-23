@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -v bash_profile ~/.bash_profile
+cp -v bashrc ~/.bashrc
+cp -v screenrc ~/.screenrc
+
