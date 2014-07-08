@@ -1,4 +1,3 @@
+# bash_profile is called for interactive/login shells, ie. it's for use by hu-mans
 [[ -s ~/.bashrc ]] && source ~/.bashrc
-export PATH=/usr/local/bin:$PATH
-# should this export go here or in bashrc?
 
