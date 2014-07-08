@@ -4,6 +4,7 @@ alias ..='cd ..'
 alias ll='ls -lH'
 alias md='mkdir'
 alias rd='rmdir'
+
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias ps="ps auxf"
@@ -54,4 +55,6 @@ echo
 echo The command you can\'t remember is "screen"
 echo
 
+# I think is just here as a note in which case there's 
+# probably somewhere more appropriate to keep it.
 #TODAY=`date +%Y-%m-%d`
