@@ -1,7 +1,4 @@
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 export PATH=/usr/local/bin:$PATH
+# should this export go here or in bashrc?
 
-
-# testing, 1, 2, 4
-
-# should that export go here or in bashrc?
