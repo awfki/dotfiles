@@ -1,3 +1,7 @@
+# bashrc is for non-interactive shells, ie. it's for robots
+
+export PATH=/usr/local/bin:$PATH
+
 # Aliases because I'm lazy
 alias ...='cd ../..'
 alias ..='cd ..'
