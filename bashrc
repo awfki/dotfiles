@@ -1,4 +1,4 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=~/bin:$PATH:$HOME/.rvm/bin # Add RVM and ~/bin to PATH for scripting
 
 # Aliases because I'm lazy
 alias ..='cd ..'
@@ -48,7 +48,7 @@ bind '"\e[B"':history-search-forward  # the history. Invaluable!
 
 alias hi='history'
 
-cd ~/scratch
+#cd ~/scratch
 echo
 echo The command you can\'t remember is "screen"
 echo
