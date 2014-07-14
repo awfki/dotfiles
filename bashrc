@@ -8,6 +8,7 @@ alias ..='cd ..'
 alias ll='ls -lH'
 alias md='mkdir'
 alias rd='rmdir'
+alias get='git'   # because I'm tired of "command not found"
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
@@ -15,7 +16,7 @@ alias ps="ps auxf"
 alias free="free -mt"
 alias df="df -Tha --total"
 alias fhere="find . -name "
-alias ls="ls -CF"
+alias ls="ls -CG"
 alias lsl="ls -lhF | less"
 alias lll="ll -lH | less"
 alias hg="history | grep"
@@ -35,11 +36,17 @@ alias flushdns='sudo dscacheutil -flushcache'
 
 # Aliases for editing things
 alias edho='sudo open -a TextWrangler.app /etc/hosts'
-alias edpr='open -a TextWrangler.app ~/.bash_profile'
-alias edrc='open -a TextWrangler.app ~/.bashrc'
 alias viho='sudo vi /etc/hosts'
-alias vipr='vi ~/.bash_profile; source ~/.bash_profile;'
-alias virc='vi ~/.bashrc; source ~/.bashrc'
+alias edpr='open -a TextWrangler.app ~/github/dotfiles/bash_profile'
+alias vipr='vi ~/github/dotfiles/bash_profile; source ~/github/dotfiles/bash_profile;'
+alias edrc='open -a TextWrangler.app ~/github/dotfiles/bashrc'
+alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
+alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
+#
+#alias edpr='open -a TextWrangler.app ~/.bash_profile' # old version
+#alias edrc='open -a TextWrangler.app ~/.bashrc' # old version
+#alias vipr='vi ~/.bash_profile; source ~/.bash_profile;' # old version
+#alias virc='vi ~/.bashrc; source ~/.bashrc' # old version
 
 #PS1='\h:\W/\n\$ '
 PS1='\W/ \$ '
