@@ -1,6 +1,24 @@
-#!/bin/bash
+#!/usr/local/bin/python
+# 2014-07-14/DN: Copies dotfiles to whereever they belong
+# Should probably be a bash script but I'm learning Python.
 
-cp -v bash_profile ~/.bash_profile
-cp -v bashrc ~/.bashrc
-cp -v screenrc ~/.screenrc
+import os
+import socket
+HOST = socket.gethostname()
 
+if HOST.startswith("RSG", 0, 3) :
+  #print "work laptop"
+  os.system("cp -v ~/github/dotfiles/bash_profile	~/.bash_profile")
+  os.system("cp -v ~/github/dotfiles/bashrc 	~/.bashrc")
+  os.system("cp -v ~/github/dotfiles/screenrc	~/.screenrc")
+else :
+  #print "not work laptop"
+  os.system("cp -v ~/github/dotfiles/bash_profile	~/.bash_profile")
+  os.system("cp -v ~/github/dotfiles/bashrc 	~/.bashrc")
+  os.system("cp -v ~/github/dotfiles/screenrc	~/.screenrc")
+
+
+
+# TODO: 
+# 2014-07-15: use a variable for the source dir 
+# 2014-07-15: figure out how to copy files with python
