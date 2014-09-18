@@ -9,6 +9,7 @@ alias ll='ls -lH'
 alias md='mkdir'
 alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
+alias tcpdump='sudo tcpdump'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
@@ -29,7 +30,7 @@ alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
 alias pg='ping 8.8.8.8'
-alias pr='sudo nmap -sn -oG ~/scratch/nmap-pr_`date +%Y-%m-%d_%H%M`.txt -PE'
+alias pr='sudo nmap -sn -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -PE'
 alias h='host'
 alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
