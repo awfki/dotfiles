@@ -8,14 +8,14 @@ HOST = socket.gethostname()
 
 if HOST.startswith("RSG", 0, 3) :
   #print "work laptop"
-  os.system("cp -v ~/github/dotfiles/bash_profile	~/.bash_profile")
-  os.system("cp -v ~/github/dotfiles/bashrc 	~/.bashrc")
-  os.system("cp -v ~/github/dotfiles/screenrc	~/.screenrc")
+  os.system("cp -v ~/github/dotfiles/bash_profile ~/.bash_profile")
+  os.system("cp -v ~/github/dotfiles/bashrc ~/.bashrc")
+  os.system("cp -v ~/github/dotfiles/screenrc ~/.screenrc")
 else :
   #print "not work laptop"
-  os.system("cp -v ~/github/dotfiles/bash_profile	~/.bash_profile")
-  os.system("cp -v ~/github/dotfiles/bashrc 	~/.bashrc")
-  os.system("cp -v ~/github/dotfiles/screenrc	~/.screenrc")
+  os.system("cp -v ~/github/dotfiles/bash_profile ~/.bash_profile")
+  os.system("cp -v ~/github/dotfiles/bashrc  ~/.bashrc")
+  os.system("cp -v ~/github/dotfiles/screenrc ~/.screenrc")
 
 
 
