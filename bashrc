@@ -9,6 +9,7 @@ alias ll='ls -lH'
 alias md='mkdir'
 alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
+alias caldb='/Applications/calibre.app/Contents/MacOS/calibredb'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
@@ -35,6 +36,7 @@ alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
 
 # Aliases for editing things
+alias ed='sudo open -a TextWrangler.app '
 alias edho='sudo open -a TextWrangler.app /etc/hosts'
 alias viho='sudo vi /etc/hosts'
 alias edpr='open -a TextWrangler.app ~/github/dotfiles/bash_profile'
