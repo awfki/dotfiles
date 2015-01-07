@@ -32,6 +32,7 @@ alias p='ping'
 alias pg='ping 8.8.8.8'
 alias pr='sudo nmap -sn -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -PE'
 alias h='host'
+alias tra='traceroute'
 alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
 
