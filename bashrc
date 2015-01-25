@@ -70,10 +70,6 @@ echo
 echo The command you can\'t remember is "screen"
 echo
 
-echo Adding route to pcm-staging subnet
-echo
-sudo route -n add -net 172.22.0.0/16  172.16.10.5
-
 # I think is just here as a note in which case there's 
 # probably somewhere more appropriate to keep it.
 #TODAY=`date +%Y-%m-%d`
