@@ -9,10 +9,7 @@ alias ll='ls -lH'
 alias md='mkdir'
 alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
-<<<<<<< HEAD
 alias caldb='/Applications/calibre.app/Contents/MacOS/calibredb'
-=======
->>>>>>> FETCH_HEAD
 alias tcpdump='sudo tcpdump'
 
 # experiments from a web site
