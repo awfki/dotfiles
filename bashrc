@@ -11,6 +11,8 @@ alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
 alias caldb='/Applications/calibre.app/Contents/MacOS/calibredb'
 alias tcpdump='sudo tcpdump'
+alias myip='curl ifconfig.me'
+alias websvr='sudo python -m SimpleHTTPServer 80'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
@@ -31,7 +33,7 @@ alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
 alias pg='ping 8.8.8.8'
-alias pr='sudo nmap -sn -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -PE'
+alias pr='echo -n sudo\ ;sudo nmap -sn -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -PE'
 alias h='host'
 alias tra='traceroute'
 alias trc='traceroute'
