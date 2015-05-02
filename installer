@@ -2,6 +2,9 @@
 # 2014-07-14/DN: Copies dotfiles to whereever they belong
 # Should probably be a bash script but I'm learning Python.
 
+# 2015-05-02/DN: since I used ~ and both branches do the same thing I'm not sure 
+# what the point of this was.
+
 import os
 import socket
 HOST = socket.gethostname()
