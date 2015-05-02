@@ -13,6 +13,7 @@ alias tcpdump='sudo tcpdump'
 alias myip='curl ifconfig.me'
 alias websvr='sudo python -m SimpleHTTPServer 80'
 alias hi='history'
+alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
