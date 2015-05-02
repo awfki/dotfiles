@@ -1,0 +1,5 @@
+# Use up and down arrow to search command history. Invaluable!
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+# Use ^k to keep a command in history without executing
+"\C-k": "\C-a history -s \C-j"

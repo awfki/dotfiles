@@ -54,10 +54,12 @@ alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
+# Moved these to inputrc
 # Use up and down arrow to search command history. Invaluable!
-bind '"\e[A"':history-search-backward 
-bind '"\e[B"':history-search-forward  
-
+#bind '"\e[A"':history-search-backward 
+#bind '"\e[B"':history-search-forward  
+# Use ^k to keep a command in history without executing
+#bind '"\C-k"':\C-a history -s \C-j
 
 #cd ~/scratch
 echo
