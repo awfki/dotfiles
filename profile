@@ -41,12 +41,12 @@ alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
 
 # Aliases for editing things
-alias ed='sudo open -a TextWrangler.app '
-alias edho='sudo open -a TextWrangler.app /etc/hosts'
+alias ed='sudo open -a /Applications/BBEdit.app '
+alias edho='sudo open -a /Applications/BBEdit.app /etc/hosts'
 alias viho='sudo vi /etc/hosts'
-alias edpr='open -a TextWrangler.app ~/github/dotfiles/bash_profile'
+alias edpr='open -a /Applications/BBEdit.app ~/github/dotfiles/bash_profile'
 alias vipr='vi ~/github/dotfiles/bash_profile; source ~/github/dotfiles/bash_profile;'
-alias edrc='open -a TextWrangler.app ~/github/dotfiles/bashrc'
+alias edrc='open -a /Applications/BBEdit.app ~/github/dotfiles/bashrc'
 alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
 alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
 #
