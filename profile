@@ -10,10 +10,11 @@ alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
 alias caldb='/Applications/calibre.app/Contents/MacOS/calibredb'
 alias tcpdump='sudo tcpdump'
-alias myip='curl ifconfig.me'
+alias myip='curl ifconfig.co'
 alias websvr='sudo python -m SimpleHTTPServer 80'
 alias hi='history'
 alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
+alias flushdns='sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
@@ -29,7 +30,8 @@ alias i=egrep
 alias ql='qlmanage -p'
 
 # Aliases for network stuff
-alias ifc='sudo ifconfig'
+alias ifc='ifconfig | egrep "(^\w|ether |inet )"'
+alias ifs='sudo ifconfig'
 alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
@@ -44,8 +46,8 @@ alias flushdns='sudo dscacheutil -flushcache'
 alias ed='sudo open -a /Applications/BBEdit.app '
 alias edho='sudo open -a /Applications/BBEdit.app /etc/hosts'
 alias viho='sudo vi /etc/hosts'
-alias edpr='open -a /Applications/BBEdit.app ~/github/dotfiles/bash_profile'
-alias vipr='vi ~/github/dotfiles/bash_profile; source ~/github/dotfiles/bash_profile;'
+alias edpr='open -a /Applications/BBEdit.app ~/github/dotfiles/profile'
+alias vipr='vi ~/github/dotfiles/profile; source ~/github/dotfiles/profile;'
 alias edrc='open -a /Applications/BBEdit.app ~/github/dotfiles/bashrc'
 alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
 alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
