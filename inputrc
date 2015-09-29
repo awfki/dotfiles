@@ -1,5 +1,11 @@
+# Make auto-complete cycle through options instead of listing them all
+TAB: menu-complete
+# Make shift tab reverse the above
+"\e[Z": "\e-1\C-i"
+
 # Use up and down arrow to search command history. Invaluable!
 "\e[A": history-search-backward
 "\e[B": history-search-forward
-# Use ^k to keep a command in history without executing
-"\C-k": "\C-a history -s \C-j"
+
+# Use Control-g to keep a command in history without executing
+"\C-g": "\C-a history -s \C-j"
