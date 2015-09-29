@@ -14,6 +14,7 @@ alias myip='curl ifconfig.me'
 alias websvr='sudo python -m SimpleHTTPServer 80'
 alias hi='history'
 alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
+alias copy='rsync -h -r -t -x -v --info=progress2 --size-only --exclude=".*"'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
