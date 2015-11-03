@@ -14,6 +14,7 @@ alias myip='curl ifconfig.co'
 alias websvr='sudo python -m SimpleHTTPServer 80'
 alias hi='history'
 alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
+alias copy='rsync -h -r -t -x -v --info=progress2 --size-only --exclude=".*"'
 alias flushdns='sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches'
 
 # experiments from a web site
