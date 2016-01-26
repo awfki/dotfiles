@@ -31,13 +31,14 @@ alias i=egrep
 alias ql='qlmanage -p'
 
 # Aliases for network stuff
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias ifc='ifconfig | egrep "(^\w|ether |inet )"'
 alias ifs='sudo ifconfig'
 alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
 alias pg='ping 8.8.8.8'
-alias pr='echo -n sudo\ ;sudo nmap -sn -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -PE'
+alias pr='nmap -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -sP'
 alias h='host'
 alias tra='traceroute'
 alias trc='traceroute'
