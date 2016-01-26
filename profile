@@ -44,12 +44,12 @@ alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
 
 # Aliases for editing things
-alias ed='sudo open -a /Applications/BBEdit.app '
-alias edho='sudo open -a /Applications/BBEdit.app /etc/hosts'
+alias ed='sudo open -a /Applications/Atom.app '
+alias edho='sudo open -a /Applications/Atom.app /etc/hosts'
 alias viho='sudo vi /etc/hosts'
-alias edpr='open -a /Applications/BBEdit.app ~/github/dotfiles/profile'
+alias edpr='open -a /Applications/Atom.app ~/github/dotfiles/profile'
 alias vipr='vi ~/github/dotfiles/profile; source ~/github/dotfiles/profile;'
-alias edrc='open -a /Applications/BBEdit.app ~/github/dotfiles/bashrc'
+alias edrc='open -a /Applications/Atom.app ~/github/dotfiles/bashrc'
 alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
 alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
 #
