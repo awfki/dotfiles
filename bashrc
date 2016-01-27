@@ -1,4 +1,6 @@
 export PATH=~/bin:/usr/local/bin:$PATH
+# Make bash history ignore dupes and lines starting with a space
+export HISTCONTROL=ignoreboth
 
 #PS1='\h:\W/\n\$ '
 #PS1='\W/ \$ '
