@@ -31,25 +31,26 @@ alias i=egrep
 alias ql='qlmanage -p'
 
 # Aliases for network stuff
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias ifc='ifconfig | egrep "(^\w|ether |inet )"'
 alias ifs='sudo ifconfig'
 alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
 alias pg='ping 8.8.8.8'
-alias pr='echo -n sudo\ ;sudo nmap -sn -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -PE'
+alias pr='nmap -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -sP'
 alias h='host'
 alias tra='traceroute'
 alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
 
 # Aliases for editing things
-alias ed='sudo open -a /Applications/BBEdit.app '
-alias edho='sudo open -a /Applications/BBEdit.app /etc/hosts'
+alias ed='sudo open -a /Applications/Atom.app '
+alias edho='sudo open -a /Applications/Atom.app /etc/hosts'
 alias viho='sudo vi /etc/hosts'
-alias edpr='open -a /Applications/BBEdit.app ~/github/dotfiles/profile'
+alias edpr='open -a /Applications/Atom.app ~/github/dotfiles/profile'
 alias vipr='vi ~/github/dotfiles/profile; source ~/github/dotfiles/profile;'
-alias edrc='open -a /Applications/BBEdit.app ~/github/dotfiles/bashrc'
+alias edrc='open -a /Applications/Atom.app ~/github/dotfiles/bashrc'
 alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
 alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
 #
