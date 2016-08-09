@@ -1,5 +1,6 @@
 # pulls in everything from bashrc
 [[ -s ~/.bashrc ]] && source ~/.bashrc
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # Aliases because I'm lazy
 alias ...='cd ../..'
@@ -37,8 +38,8 @@ alias ifs='sudo ifconfig'
 alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
-alias pg='ping 8.8.8.8'
-alias pr='nmap -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -sP'
+alias pg='ping -c 3 google.com; ping -c 3 8.8.8.8'
+alias pr='nmap -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -sn'
 alias h='host'
 alias tra='traceroute'
 alias trc='traceroute'

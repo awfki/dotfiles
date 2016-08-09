@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # 2014-07-14/DN: Copies dotfiles to whereever they belong
 # Should probably be a bash script but I'm learning Python.
 
