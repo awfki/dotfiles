@@ -1,6 +1,8 @@
 # pulls in everything from bashrc
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+VISUAL="atom -w"
+EDITOR="atom -w"
 
 # Aliases because I'm lazy
 alias ...='cd ../..'
