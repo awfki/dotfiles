@@ -17,6 +17,8 @@ alias hi='history'
 alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
 alias copy='rsync -h -r -t -x -v --info=progress2 --size-only --exclude=".*"'
 alias flushdns='sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches'
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
@@ -38,7 +40,7 @@ alias ifs='sudo ifconfig'
 alias ifdn='ifcfg down'
 alias ifup='ifcfg up'
 alias p='ping'
-alias pg='ping -c 3 google.com; ping -c 3 8.8.8.8'
+alias pg='ping -c 5 google.com; ping -c 5 8.8.8.8'
 alias pr='nmap -oG ~/scratch/nmap-pr/`date +%Y-%m-%d_%H%M`.txt -sn'
 alias h='host'
 alias tra='traceroute'
@@ -62,8 +64,8 @@ HISTCONTROL=ignoreboth
 
 # Moved these to inputrc
 # Use up and down arrow to search command history. Invaluable!
-#bind '"\e[A"':history-search-backward 
-#bind '"\e[B"':history-search-forward  
+#bind '"\e[A"':history-search-backward
+#bind '"\e[B"':history-search-forward
 # Use ^k to keep a command in history without executing
 #bind '"\C-k"':\C-a history -s \C-j
 
