@@ -19,7 +19,7 @@ alias hi='history'
 alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
 alias copy='rsync -h -r -t -x -v --info=progress2 --size-only --exclude=".*"'
 alias flushdns='sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches'
-
+alias finder='open -a Finder ./'
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias ps="ps aux"
