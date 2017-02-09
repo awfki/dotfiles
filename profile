@@ -20,6 +20,9 @@ alias gitupd='echo ; git status; git add *; git commit; git push; git status;'
 alias copy='rsync -h -r -t -x -v --info=progress2 --size-only --exclude=".*"'
 alias flushdns='sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches'
 alias finder='open -a Finder ./'
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
 # experiments from a web site
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias ps="ps aux"
@@ -64,8 +67,8 @@ HISTCONTROL=ignoreboth
 
 # Moved these to inputrc
 # Use up and down arrow to search command history. Invaluable!
-#bind '"\e[A"':history-search-backward 
-#bind '"\e[B"':history-search-forward  
+#bind '"\e[A"':history-search-backward
+#bind '"\e[B"':history-search-forward
 # Use ^k to keep a command in history without executing
 #bind '"\C-k"':\C-a history -s \C-j
 
