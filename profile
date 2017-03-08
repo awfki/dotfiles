@@ -12,6 +12,7 @@ alias md='mkdir'
 alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
 alias caldb='/Applications/calibre.app/Contents/MacOS/calibredb'
+alias dns='scutil --dns'
 alias tcpdump='sudo tcpdump'
 alias myip='curl ifconfig.co'
 alias websvr='sudo python -m SimpleHTTPServer 80'

@@ -1,6 +1,7 @@
 " install pathogen
 execute pathogen#infect()
 
+filetype indent plugin on
 " enable solarized dark color scheme
 syntax enable
 set background=dark
