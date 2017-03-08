@@ -73,6 +73,8 @@ HISTCONTROL=ignoreboth
 # Use ^k to keep a command in history without executing
 #bind '"\C-k"':\C-a history -s \C-j
 
+ssh-add -K
+
 #cd ~/scratch
 echo
 echo The command you can\'t remember is "screen"
