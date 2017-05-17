@@ -5,8 +5,8 @@ VISUAL="atom -w"
 EDITOR="atom -w"
 
 # Aliases because I'm lazy
-alias ...='cd ../..'
-alias ..='cd ..'
+alias ..='upup'
+alias ...='upup 2'
 alias ll='ls -lH'
 alias md='mkdir'
 alias rd='rmdir'
@@ -25,6 +25,8 @@ alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # experiments from a web site
+upup(){ DEEP=$1; [ -z "${DEEP}" ] && { DEEP=1; }; for i in $(seq 1 ${DEEP}); do cd ../; done; }
+
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias ps="ps aux"
 alias free="free -mt"
@@ -61,6 +63,8 @@ alias edrc='open -a /Applications/Atom.app ~/github/dotfiles/bashrc'
 alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
 alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
 #
+
+ssh-add -K
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
