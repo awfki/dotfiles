@@ -8,5 +8,5 @@ eval $(thefuck --alias)
 #PS1='\W/ \$ '
 #Updates iTerm title with PWD
 #PS1="\[\033]0;\w\007\]\w \$ "
-PS1="\[\e[33;40m\][\w]\\$ \[\e[0m\]"
+PS1="\[\e[33;40m\][\h:\w]\\$ \[\e[0m\]"
 
