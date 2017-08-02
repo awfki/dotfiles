@@ -1,3 +1,6 @@
+# Aliases for MailChimp 
+alias ssh-add='ssh-add -t 4h'
+
 # Aliases because I'm lazy
 alias ..='upup'
 alias ...='upup 2'
