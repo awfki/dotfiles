@@ -1,7 +1,7 @@
 export PATH=~/bin:/usr/local/bin:$PATH
 # Make bash history ignore dupes and lines starting with a space
 export HISTCONTROL=ignoreboth
-export PYTHONPATH=~/bin/python
+#export PYTHONPATH=~/bin/python
 eval $(thefuck --alias)
 
 #PS1='\h:\W/\n\$ '
