@@ -7,7 +7,7 @@ filetype indent plugin on
 " https://github.com/altercation/vim-colors-solarized
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 " enable line numbers
 set number
@@ -16,7 +16,7 @@ set number
 let &t_Co=256
 
 " crosshair:
-highlight CursorLine cterm=NONE ctermbg=black
-highlight CursorColumn cterm=NONE ctermbg=black
-set cursorline! cursorcolumn!
-nmap <silent> <Leader>c :set cursorline! cursorcolumn!<CR>
+"highlight CursorLine cterm=NONE ctermbg=black
+"highlight CursorColumn cterm=NONE ctermbg=black
+"set cursorline! cursorcolumn!
+"nmap <silent> <Leader>c :set cursorline! cursorcolumn!<CR>
