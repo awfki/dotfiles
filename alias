@@ -21,6 +21,9 @@ alias cd=pushd
 alias cdp=popd
 alias pd=popd
 
+alias tldr='tldr -p osx'
+alias t='tldr'
+
 # experiments from a web site
 upup(){ DEEP=$1; [ -z "${DEEP}" ] && { DEEP=1; }; for i in $(seq 1 ${DEEP}); do cd ../; done; }
 
