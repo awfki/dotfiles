@@ -1,4 +1,4 @@
-export PATH=~/bin:/usr/local/bin:$PATH
+export PATH=~/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin
 # Make bash history ignore dupes and lines starting with a space
 export HISTCONTROL=ignoreboth
 export PYTHONPATH=~/bin/python
