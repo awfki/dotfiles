@@ -16,6 +16,7 @@ if HOST.startswith("RSG", 0, 3) :
   os.system("cp -v ~/github/dotfiles/bashrc ~/.bashrc")
   os.system("cp -v ~/github/dotfiles/inputrc ~/.inputrc")
   os.system("cp -v ~/github/dotfiles/screenrc ~/.screenrc")
+  os.system("cp -v ~/github/dotfiles/vimrc ~/.vimrc")
 else :
   #print "not work laptop"
   os.system("cp -v ~/github/dotfiles/alias ~/.alias")
@@ -23,7 +24,7 @@ else :
   os.system("cp -v ~/github/dotfiles/bashrc  ~/.bashrc")
   os.system("cp -v ~/github/dotfiles/inputrc ~/.inputrc")
   os.system("cp -v ~/github/dotfiles/screenrc ~/.screenrc")
-
+  os.system("cp -v ~/github/dotfiles/vimrc ~/.vimrc")
 
 
 # TODO: 

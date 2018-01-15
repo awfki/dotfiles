@@ -17,6 +17,12 @@ alias flushdns='sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushca
 alias finder='open -a Finder ./'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias cd=pushd
+alias cdp=popd
+alias pd=popd
+
+alias tldr='tldr -p osx'
+alias t='tldr'
 
 # experiments from a web site
 upup(){ DEEP=$1; [ -z "${DEEP}" ] && { DEEP=1; }; for i in $(seq 1 ${DEEP}); do cd ../; done; }
