@@ -1,6 +1,7 @@
 # pulls in everything from bashrc
 [[ -s ~/.bashrc ]] && source ~/.bashrc
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # I think these try to set the default editor to atom - don't know if it works
 VISUAL="atom -w"
