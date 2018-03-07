@@ -63,4 +63,4 @@ alias vipr='vi ~/github/dotfiles/profile; source ~/github/dotfiles/profile;'
 alias edrc='open -a /Applications/Atom.app ~/github/dotfiles/bashrc'
 alias virc='vi ~/github/dotfiles/bashrc; source ~/github/dotfiles/bashrc'
 alias dotinst='pushd ~/github/dotfiles/; ./installer; popd'
-
+alias code='PYENV_VERSION=$(pyenv version-name) code' 

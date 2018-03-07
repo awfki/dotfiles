@@ -2,6 +2,7 @@
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # I think these try to set the default editor to atom - don't know if it works
 VISUAL="atom -w"
@@ -9,7 +10,7 @@ EDITOR="atom -w"
 
 # Import Aliases and at least one function
 [[ -s ~/.alias ]] && source ~/.alias
- 
+
 #
 
 ssh-add -K
