@@ -1,8 +1,5 @@
 # pulls in everything from bashrc
 [[ -s ~/.bashrc ]] && source ~/.bashrc
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # I think these try to set the default editor to atom - don't know if it works
 VISUAL="atom -w"
@@ -13,7 +10,25 @@ EDITOR="atom -w"
 
 #
 
-ssh-add -K
+case "$OSTYPE" in
+  solaris*) ;;
+  darwin*)  
+	ssh-add -K 
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
+	# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+	eval $(thefuck --alias)
+	;;
+  linux*)   
+	eval $(ssh-agent -s) 
+	trap 'kill $SSH_AGENT_PID' EXIT
+	;;
+  bsd*)
+ 	;;
+  msys*)
+	;;
+  *)        echo "unknown: $OSTYPE" ;;
+esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
