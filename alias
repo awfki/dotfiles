@@ -1,7 +1,9 @@
 # Aliases because I'm lazy
+alias asdm='open -n /Applications/Cisco\ ASDM-IDM.app'
 alias ..='upup'
 alias ...='upup 2'
 alias ll='ls -lH'
+alias lld='ls -dlH'
 alias md='mkdir'
 alias rd='rmdir'
 alias get='git'   # because I'm tired of "command not found"
@@ -22,6 +24,7 @@ alias cdp=popd
 alias pd=popd
 alias forloop='echo for f in *.c; do echo "Processing $f file.."; done'
 alias whileloop='while read Line; do COMMAND; done < FILE'
+alias regen='ssh-keygen -R '
 
 alias tldr='tldr -p osx'
 alias t='tldr'
@@ -57,7 +60,7 @@ alias trc='traceroute'
 alias flushdns='sudo dscacheutil -flushcache'
 
 # Aliases for editing things
-alias ed='sudo open -a /Applications/Atom.app '
+alias ed='open -a /Applications/Atom.app '
 alias edho='sudo open -a /Applications/Atom.app /etc/hosts'
 alias viho='sudo vi /etc/hosts'
 alias edpr='open -a /Applications/Atom.app ~/github/dotfiles/profile'
