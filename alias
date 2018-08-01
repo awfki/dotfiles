@@ -26,6 +26,7 @@ alias pd=popd
 alias forloop='echo for f in *.c; do echo "Processing $f file.."; done'
 alias whileloop='while read Line; do COMMAND; done < FILE'
 alias regen='ssh-keygen -R '
+alias sed='gsed'
 
 alias tldr='tldr -p osx'
 alias t='tldr'
