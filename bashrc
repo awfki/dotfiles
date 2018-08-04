@@ -10,3 +10,7 @@ export HISTCONTROL=ignoreboth
 #PS1="\[\e[33;40m\][\h:\w]\\$ \[\e[0m\]"
 export PS1="________________________________________________________________________________\n| \u @ \h : \w \n| => "
 export PS2="| => "
+
+# were needed for pipenv w/ python3 ssh'd from chromebook - may not need in other circumstances
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
