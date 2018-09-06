@@ -1,5 +1,4 @@
-# Aliases because I'm lazy
-alias asdm='open -n /Applications/Cisco\ ASDM-IDM.app'
+# Aliases because I'm lazy alias asdm='open -n /Applications/Cisco\ ASDM-IDM.app'
 alias ..='upup'
 alias ...='upup 2'
 alias ll='ls -lH'
@@ -27,7 +26,7 @@ alias forloop='echo for f in *.c; do echo "Processing $f file.."; done'
 alias whileloop='while read Line; do COMMAND; done < FILE'
 alias regen='ssh-keygen -R '
 alias sed='gsed'
-
+alias gh='history | grep -v'
 alias tldr='tldr -p osx'
 alias t='tldr'
 
