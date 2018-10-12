@@ -8,7 +8,7 @@ export HISTCONTROL=ignoreboth
 #Updates iTerm title with PWD
 #export PS1="\[\033]0;\w\007\]\w \$ "
 #PS1="\[\e[33;40m\][\h:\w]\\$ \[\e[0m\]"
-export PS1="=======================\n| \u @ \h : \w \n| => "
+export PS1="======================= \$(parse_git_branch)\n| \u @ \h : \w \n| => "
 export PS2="|>> "
 
 # were needed for pipenv w/ python3 ssh'd from chromebook - may not need in other circumstances

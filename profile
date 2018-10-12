@@ -14,8 +14,8 @@ case "$OSTYPE" in
   solaris*) ;;
   darwin*)  
 	ssh-add -K 
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
+	#eval "$(pyenv init -)"
+	#eval "$(pyenv virtualenv-init -)"
 	# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 	eval $(thefuck --alias)
 	;;
@@ -46,7 +46,9 @@ echo
 echo The command you can\'t remember is "screen"
 echo
 
-
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 #=======================
 # This bit from the web, to use hub as a wrapper around git
 #eval "$(hub alias -s)"
