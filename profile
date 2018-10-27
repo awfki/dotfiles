@@ -14,8 +14,8 @@ case "$OSTYPE" in
   solaris*) ;;
   darwin*)  
 	ssh-add -K 
-	#eval "$(pyenv init -)"
-	#eval "$(pyenv virtualenv-init -)"
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
 	# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 	eval $(thefuck --alias)
 	;;
