@@ -1,4 +1,5 @@
-# Aliases because I'm lazy alias asdm='open -n /Applications/Cisco\ ASDM-IDM.app'
+# Aliases because I'm lazy 
+alias asdm='open -n /Applications/Cisco\ ASDM-IDM.app'
 alias ..='upup'
 alias ...='upup 2'
 alias ll='ls -lH'
